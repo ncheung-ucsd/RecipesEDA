@@ -1,3 +1,5 @@
-# RecipesEDA
+# Project 3 - Exploratory Data Anlysis
 
-A project for the DSC80 class at UCSD.
+### Introduction and Question Identification
+
+This dataset includes recipes and ratings from the website [food.com](https://www.food.com)
