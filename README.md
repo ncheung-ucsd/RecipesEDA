@@ -142,4 +142,33 @@ This is the a scatter plot of the number of calories versus the total fat, with 
 
 ### Interesting Aggregates
 
-<table border="1" class="dataframe">\n  <thead>\n    <tr style="text-align: right;">\n      <th>rating_rounded</th>\n      <th>median calories</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1.0</td>\n      <td>275.9</td>\n    </tr>\n    <tr>\n      <td>2.0</td>\n      <td>302.4</td>\n    </tr>\n    <tr>\n      <td>3.0</td>\n      <td>307.7</td>\n    </tr>\n    <tr>\n      <td>4.0</td>\n      <td>310.0</td>\n    </tr>\n    <tr>\n      <td>5.0</td>\n      <td>302.7</td>\n    </tr>\n  </tbody>\n</table>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>rating_rounded</th>
+      <th>median calories</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.0</td>
+      <td>275.9</td>
+    </tr>
+    <tr>
+      <td>2.0</td>
+      <td>302.4</td>
+    </tr>
+    <tr>
+      <td>3.0</td>
+      <td>307.7</td>
+    </tr>
+    <tr>
+      <td>4.0</td>
+      <td>310.0</td>
+    </tr>
+    <tr>
+      <td>5.0</td>
+      <td>302.7</td>
+    </tr>
+  </tbody>
+</table>
