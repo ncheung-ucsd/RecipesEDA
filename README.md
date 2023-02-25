@@ -187,8 +187,16 @@ When there are missing reviews in the `reviews`, it is likely because the user d
 
 The column for which missingness was analyzed is the `rating` column.
 
-The first question asked was whether or not the missingness of `rating` is dependent on `n_ingredients`. Below, is a plot of the distribution of `n_ingredients` when `rating` is missing and when `rating` is not missing.
+The question asked was whether or not the missingness of `rating` is dependent on `n_steps`. Below, is a plot of the distribution of `n_steps` when `rating` is missing and when `rating` is not missing.
 
-<iframe src="assets/fig8.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/fig9.html" width=800 height=600 frameBorder=0></iframe>
+
+A K-S statistic was used to calculated a p-value, which was **0**. At a significance level of 0.05, it is likely that the missingness of `rating` is dependent on `n_steps`, since the p-value is lower than the significance level.
 
 ## Hypothesis Testing
+
+The null hypothesis was: Rating and calories are not related. 1 star rated recipes have lower calories by chance. The alternative hypothesis was: Rating and calories are related. 1 star rated recipes are rated lower not by chance. The median of `calories (#)` was used as the test statistic, as the distribution of `calories (#)` is heavily skewed, so median would be a better measure of center than mean. A significance level of 0.05 was chosen. This hypothesis will be helpful in determining if certain ratings tend to be lower in calories, which directly addresses the overall question. Below is the empirical distribution of the median calories, along with the observed median calories, shown in red.
+
+<iframe src="assets/fig10.html" width=800 height=600 frameBorder=0></iframe>
+
+The resulting p-value was 0.006. At the signifance level of 0.05, we reject the null hypothesis. This implies that lower calorie recipes tend to have ratings of 1.
