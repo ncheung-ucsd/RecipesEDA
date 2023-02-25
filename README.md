@@ -6,6 +6,8 @@ This dataset includes recipes and ratings from the website [food.com](https://ww
 
 The original raw datasets include one for recipes, `RAW_interactions.csv`, and one for ratings, `RAW_ratings.csv`. `RAW_interactions.csv` has 83782 rows of data, and `RAW_interactions.csv` has 731927 rows of data. The relevant columns for this analysis are: `nutrition`, `n_steps`, `n_ingredients`, `rating`, and `review`. `nutrition` is the nutrition information in the form [calories (#), total fat (PDV), sugar (PDV), sodium (PDV), protein (PDV), saturated fat (PDV), carbohydrates (PDV)]; PDV stands for “percentage of daily value”. `n_steps` is the number of steps in the recipe. `n_ingredients` is the number of ingredients in the recipe. `rating` is the rating given. `review` is the review text.
 
+## Cleaning and EDA
+
 ### Data Cleaning
 
 The first step taken was to left merge the two datasets together. This was done to explore potential relationships between the number of calories in a recipe and the ratings those recipes received. The next step was to fill all ratings of 0 with `np.nan`. This was done because zeroes in the dataset indicated that the values were missing, not that the user gave the recipe a rating of 0, since the lowest possible rating a user can give is 1. Thus, `np.nan` is a better representation of the value. The next step was to add the average rating per recipe back to `RAW_recipes`. This was to aggregate each pair of recipe and rating of a given recipe into one row, so that each recipe only had one row. The next step was splitting the `nutrition` column into
@@ -172,3 +174,15 @@ This is the a scatter plot of the number of calories versus the total fat, with 
     </tr>
   </tbody>
 </table>
+
+The table above shows the median calorie count for every rating. One thing worth noting is that the median calorie count is much lower for recipes rated one star compared to other ratings. This finding is later used to set up a hypothesis test.
+
+## Assessment of Missingness
+
+### NMAR Analysis
+
+When there are missing reviews in the reviews section, it is likely because the user did not have any comments on the recipe. This indicates that the review as NMAR, as the missingness of the review depends on the value itself, or whether or not the user had any comments to add. This column could not be MD, because there is not another column that we can use to recover information on whether or not the user had any additional comments. Additional data to be obtained that would explain the missingness is to add a `satisfied` column, which have the values, extremely satisfied, neutral, and extremely unsatisfied. It would be MAR on this column, as reviews will be more likely to be missing within the neutral values of `satisfied`
+
+### Missingness Dependency
+
+## Hypothesis Testing
