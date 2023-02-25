@@ -136,6 +136,10 @@ This is the distirbution of the 99th quantile of the `calories (#)`, which shows
 
 ### Bivariate Analysis
 
-<iframe src="assets/fig5.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/fig4.html" width=800 height=600 frameBorder=0></iframe>
 
-This is the distribution of the 99th quantile of the `calories (#)`, separated by the rounded average rating; note that only the 99th quantile of `calories (#)` is shown for readability. The graph shows that as rating increases, the median calories also generally increases, with a rating of 1 having the lowest median rating; also it shows that there are many outliers for each rating.
+This is the a scatter plot of the number of calories versus the total fat, with only the 99th quantile of calories for readability. It shows a general linear positive trend between the two variables, indivating that higher calories are correlated with higher fat.
+
+### Interesting Aggregates
+
+'<table border="1" class="dataframe">\n <thead>\n <tr style="text-align: right;">\n <th>rating_rounded</th>\n <th>median calories</th>\n </tr>\n </thead>\n <tbody>\n <tr>\n <td>1.0</td>\n <td>275.9</td>\n </tr>\n <tr>\n <td>2.0</td>\n <td>302.4</td>\n </tr>\n <tr>\n <td>3.0</td>\n <td>307.7</td>\n </tr>\n <tr>\n <td>4.0</td>\n <td>310.0</td>\n </tr>\n <tr>\n <td>5.0</td>\n <td>302.7</td>\n </tr>\n </tbody>\n</table>'
