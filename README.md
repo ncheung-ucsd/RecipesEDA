@@ -181,8 +181,14 @@ The table above shows the median calorie count for every rating. One thing worth
 
 ### NMAR Analysis
 
-When there are missing reviews in the reviews section, it is likely because the user did not have any comments on the recipe. This indicates that the review as NMAR, as the missingness of the review depends on the value itself, or whether or not the user had any comments to add. This column could not be MD, because there is not another column that we can use to recover information on whether or not the user had any additional comments. Additional data to be obtained that would explain the missingness is to add a `satisfied` column, which have the values, extremely satisfied, neutral, and extremely unsatisfied. It would be MAR on this column, as reviews will be more likely to be missing within the neutral values of `satisfied`
+When there are missing reviews in the `reviews`, it is likely because the user did not have any comments on the recipe. This indicates that `review` is NMAR, as the missingness of `review` depends on the value itself. `review` could not be MD, because there is not another column that we can use to recover information on whether or not the user had any additional comments. Additional data that would explain the missingness is a `satisfied` column, which has the values: `extremely satisfied`, `neutral`, and `extremely unsatisfied`. It would be MAR on this column, as reviews will be more likely to be missing within the neutral values of `satisfied`, since they would be less likely to have additional comments for a review.
 
 ### Missingness Dependency
+
+The column for which missingness was analyzed is the `rating` column.
+
+The first question asked was whether or not the missingness of `rating` is dependent on `n_ingredients`. Below, is a plot of the distribution of `n_ingredients` when `rating` is missing and when `rating` is not missing.
+
+<iframe src="assets/fig8.html" width=800 height=600 frameBorder=0></iframe>
 
 ## Hypothesis Testing
