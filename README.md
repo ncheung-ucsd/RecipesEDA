@@ -199,4 +199,4 @@ The null hypothesis was: Rating and calories are not related. 1 star rated recip
 
 <iframe src="assets/fig10.html" width=800 height=600 frameBorder=0></iframe>
 
-The resulting p-value was 0.006. At the signifance level of 0.05, we reject the null hypothesis. This implies that lower calorie recipes tend to have ratings of 1.
+The resulting p-value was **0.006**. At the signifance level of 0.05, we reject the null hypothesis. This implies that lower calorie recipes tend to have ratings of 1.
