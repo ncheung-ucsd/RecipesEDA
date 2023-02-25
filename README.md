@@ -130,12 +130,12 @@ Below is the first few rows the dataframe. Note that the `tags`, `steps`, `descr
 
 ### Univariate Analysis
 
-<iframe src="assets/file-name.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/fig.html" width=800 height=600 frameBorder=0></iframe>
 
 This is the distirbution of the 99th quantile of the `calories (#)`, which shows that the distribution is heavily skewed right. Note that only data from the 99th quantile is shown to improve readability, and the red line indicates the mean of the distribution.
 
 ### Bivariate Analysis
 
-<iframe src="assets/file-name.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/fig5.html" width=800 height=600 frameBorder=0></iframe>
 
-This is the distirbution of the 99th quantile of the `calories (#)`, separated by the rounded average rating; note that only the 99th quantile of `calories (#)` is shown for readability. The graph shows that as rating increases, the median calories also generally increases, with a rating of 1 having the lowest median rating; also it shows that there are many outliers for each rating.
+This is the distribution of the 99th quantile of the `calories (#)`, separated by the rounded average rating; note that only the 99th quantile of `calories (#)` is shown for readability. The graph shows that as rating increases, the median calories also generally increases, with a rating of 1 having the lowest median rating; also it shows that there are many outliers for each rating.
